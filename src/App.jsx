@@ -28,6 +28,7 @@ import ExecutionPipeline from './components/AgentSidebar/ExecutionPipeline.jsx';
 import OfflineExperience from './components/Offline/OfflineExperience.jsx';
 import NewTabPage from './components/NewTab/NewTabPage.jsx';
 import IntelligenceDashboard from './components/Dashboard/IntelligenceDashboard.jsx';
+import AdminDashboard from './components/Dashboard/AdminDashboard.jsx';
 import { useAuth } from './components/Auth/AuthContext';
 import AuthPage from './components/Auth/AuthPage';
 import './index.css';
@@ -288,6 +289,7 @@ function App() {
   const [dbLoaded, setDbLoaded] = useState(false);
   const [blockedCount, setBlockedCount] = useState({}); // { tabId: count }
   const [showDashboard, setShowDashboard] = useState(false);
+  const [showAdminDashboard, setShowAdminDashboard] = useState(false);
   const [firewallEnabled, setFirewallEnabled] = useState(true);
   const [isSplitScreen, setIsSplitScreen] = useState(false);
   const [splitTabIds, setSplitTabIds] = useState([null, null]); // [tab1, tab2]
@@ -337,6 +339,11 @@ function App() {
       if ((e.ctrlKey && e.key === 'r') || e.key === 'F5') {
         e.preventDefault();
         handleRefresh();
+      }
+      // Ctrl+Shift+A: Admin Dashboard
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') {
+        e.preventDefault();
+        setShowAdminDashboard(prev => !prev);
       }
     };
 
@@ -1726,6 +1733,9 @@ function App() {
       )}
       {/* Intelligence Dashboard */}
       <IntelligenceDashboard isOpen={showDashboard} onClose={() => setShowDashboard(false)} />
+      
+      {/* Admin Dashboard */}
+      <AdminDashboard isOpen={showAdminDashboard} onClose={() => setShowAdminDashboard(false)} />
     </div>
   );
 }
