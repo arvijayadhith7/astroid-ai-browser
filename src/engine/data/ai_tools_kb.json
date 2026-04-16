@@ -1,0 +1,62 @@
+{
+  "source": "AIxploria",
+  "last_updated": "2026-04-10",
+  "tools": [
+    {
+      "name": "AirMusic",
+      "category": "AI Music",
+      "description": "All-in-one AI music generator with voice cloning, vocal remover, and lyrics generation.",
+      "link": "https://airmusic.ai"
+    },
+    {
+      "name": "Lovable",
+      "category": "No-Code Development",
+      "description": "Turns text into full applications and sites; empowers users to build SaaS with natural language.",
+      "link": "https://lovable.ai"
+    },
+    {
+      "name": "HeyGen AI",
+      "category": "AI Video",
+      "description": "Hyper-realistic AI avatars and video translation with voice cloning capabilities.",
+      "link": "https://heygen.com"
+    },
+    {
+      "name": "ClickUp AI",
+      "category": "Productivity",
+      "description": "Project management platform with integrated AI for summarizing notes and task organization.",
+      "link": "https://clickup.com"
+    },
+    {
+      "name": "ThumbnailCreator.com",
+      "category": "Art & Design",
+      "description": "Specialized AI for creating high-CTR thumbnails for YouTube and Twitch content.",
+      "link": "https://thumbnailcreator.com"
+    },
+    {
+      "name": "Pexo",
+      "category": "AI Video",
+      "description": "Generates complete video clips from a simple idea, including storyboards and voiceovers.",
+      "link": "https://pexo.ai"
+    },
+    {
+      "name": "Adobe Firefly",
+      "category": "Art & Design",
+      "description": "Generative creative AI for high-quality images and design assets, integrated with Photoshop.",
+      "link": "https://adobe.com/firefly"
+    },
+    {
+      "name": "HubSpot CRM",
+      "category": "CRM & Sales",
+      "description": "Professional CRM with AI-driven marketing automation and predictive analytics.",
+      "link": "https://hubspot.com"
+    }
+  ],
+  "categories": [
+    "Productivity",
+    "AI Assistants",
+    "AI Video",
+    "AI Art & Design",
+    "Automation & Agents",
+    "AI Text & Writing"
+  ]
+}

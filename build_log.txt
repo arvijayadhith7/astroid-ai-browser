@@ -1,0 +1,65 @@
+﻿
+> net-center@1.0.0 electron:build
+> vite build && electron-builder --win
+
+[36mvite v8.0.2 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...Γ£ô 1723 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB Γöé gzip:  0.30 kB
+dist/assets/index-BmKxkU7B.css   20.07 kB Γöé gzip:  4.26 kB
+dist/assets/index-9emvM1Ow.js   235.13 kB Γöé gzip: 73.27 kB
+
+[32mΓ£ô built in 354ms[39m
+  ΓÇó electron-builder  version=26.8.1 os=10.0.26200
+  ΓÇó loaded configuration  file=package.json ("build" field)
+  ΓÇó executing @electron/rebuild  electronVersion=41.0.3 arch=x64 buildFromSource=false workspaceRoot=D:\DOWNLOADS\browser-main\browser-main projectDir=./ appDir=./
+  ΓÇó installing native dependencies  arch=x64
+  ΓÇó completed installing native dependencies
+  ΓÇó packaging       platform=win32 arch=x64 electron=41.0.3 appOutDir=build-output\win-unpacked
+  ΓÇó searching for node modules  pm=npm searchDir=D:\DOWNLOADS\browser-main\browser-main
+node.exe : 
+(node:19352) 
+[DEP0190] 
+DeprecationWarning: 
+Passing args to a 
+child process with 
+shell option true can 
+lead to security 
+vulnerabilities, as 
+the arguments are not 
+escaped, only 
+concatenated.
+At line:1 char:1
++ & "C:\Program 
+Files/node.exe" 
+"C:\Program Files/node
+_modules/npm/bin/ ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ((node:1935   
+ 2) [D...y concate    
+nated.:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+(Use `node 
+--trace-deprecation 
+...` to show where 
+the warning was 
+created)
+  ΓÇó updating asar integrity executable resource  executablePath=build-output\win-unpacked\Net Center.exe
+  ΓÇó default Electron icon is used  reason=application icon is not set
+  ΓÇó signing with signtool.exe  path=build-output\win-unpacked\Net Center.exe
+  ΓÇó building        target=nsis file=build-output\Net Center Setup 1.0.0.exe archs=x64 oneClick=false perMachine=false
+  ΓÇó signing with signtool.exe  path=build-output\win-unpacked\resources\elevate.exe
+  ΓÇó signing with signtool.exe  path=build-output\Net Center Setup 1.0.0.__uninstaller.exe
+  ΓÇó signing with signtool.exe  path=build-output\Net Center Setup 1.0.0.exe
+  ΓÇó building block map  blockMapFile=build-output\Net Center Setup 1.0.0.exe.blockmap
